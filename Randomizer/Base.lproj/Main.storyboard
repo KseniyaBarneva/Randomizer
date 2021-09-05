@@ -125,7 +125,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8g-Kb-GPf">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="25"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Send"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <segue destination="iQ6-fG-UUv" kind="unwind" unwindAction="unwindFor:" id="hBc-id-JUP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgy-pp-fLx">
                                         <rect key="frame" x="0.0" y="35" width="90" height="25"/>
@@ -160,6 +163,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LHF-LC-PY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="iQ6-fG-UUv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1702" y="93"/>
         </scene>
